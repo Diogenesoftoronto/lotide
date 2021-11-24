@@ -1,5 +1,11 @@
 // import the assertEqual function from the assertEqual module.
-import assertEqual from "assertEqual.js"
+const assertEqual = (actual, expected) => {
+  if (actual === expected) {
+    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
 
 const eqArrays = (arr1, arr2) => {
   // check if the array lengths are different
