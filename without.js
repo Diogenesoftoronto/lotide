@@ -1,15 +1,7 @@
 const without = (sourceArr, itemsToRemove) => {
-  // loop through elements in the source array
-  let result = sourceArr
-  let newArray = [...sourceArr];
-  for(let j = 0; j < itemsToRemove.length; j++) {
-    let item = itemsToRemove[j]
-    if (sourceArr.includes(item)) {
-      let indexOfItem = sourceArr.indexOf(item)
-      newArray.splice(indexOfItem, 1)
-    } else {
-      return result;
-    }
+  let result = sourceArr;
+  for (let element of itemsToRemove) {
+    result = sourceArr.filter(item => item !== element)
   }
   return result;
 }
