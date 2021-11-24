@@ -13,4 +13,3 @@ const tail = arr => {
 assertEqual(tail([1, 2, 3]), 3);
 assertEqual(tail([1, 2, 3, 4]), 4);
 assertEqual(tail([1]), 1);
-console.log(assertEqual(tail([]), undefined));
