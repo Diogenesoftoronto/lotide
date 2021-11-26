@@ -10,17 +10,18 @@ const takeWhile = (array, callback, value, index) => {
 
   if (array === undefined) throw new Error('array is undefined');
 
-  if (callback(value, index, array)) {
+    if (callback(value, index, array)) {
 
-    for (value of array) {
+      for (value of array) {
 
-      if(callback(array, value, index)){
+        if(callback(array, value, index)){
 
-        results = array.push(value);
+          results = array.push(value);
 
-      } else break;
+        } else break;
 
-      return results;
+        return results;
+    }
   }
 }
 
@@ -34,10 +35,10 @@ const takeWhile = (array, callback, value, index) => {
 
 
 
-let users = [
-  { 'user': 'barney',  'active': false },
-  { 'user': 'fred',    'active': false },
-  { 'user': 'pebbles', 'active': true }
-];
+// let users = [
+//   { 'user': 'barney',  'active': false },
+//   { 'user': 'fred',    'active': false },
+//   { 'user': 'pebbles', 'active': true }
+// ];
  
-takeWhile(users, function(o) { return !o.active; });
+// takeWhile(users, function(o) { return !o.active; });
