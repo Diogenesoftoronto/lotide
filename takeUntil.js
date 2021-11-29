@@ -9,12 +9,16 @@ const takeUntil = (array, callback, value, index) => {
   if(callback===undefined) throw new Error('callback is undefined');
 
   if (array === undefined) throw new Error('array is undefined');
-      for (value of array) {
-        if(!callback(value)){
-          results.push(value);
-        } else break;
-      }
-      return results;
+
+  for (value of array) {
+
+    if(!callback(value)){
+
+      results.push(value);
+      
+    } else break;
+  }
+  return results;
 }
 
 // const takeWhile = (array, callback) => {

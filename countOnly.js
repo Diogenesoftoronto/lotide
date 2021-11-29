@@ -1,10 +1,4 @@
-const assertEqual = (actual, expected) => {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 // array that counts the number of elements in array and returns an object with the amount of time element occurs in the array. 
 const countOnly = (sourcArr, expectObject) => {
 

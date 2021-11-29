@@ -1,0 +1,26 @@
+{
+  "name": "lotide",
+  "version": "1.0.0",
+  "description": "fork of the lodash project",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Diogenesoftoronto/lotide.git"
+  },
+  "author": "Dio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Diogenesoftoronto/lotide/issues"
+  },
+  "homepage": "https://github.com/Diogenesoftoronto/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
