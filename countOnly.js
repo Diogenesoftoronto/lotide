@@ -1,4 +1,4 @@
-const assertEqual = require('./assertEqual');
+
 // array that counts the number of elements in array and returns an object with the amount of time element occurs in the array. 
 const countOnly = (sourcArr, expectObject) => {
 
@@ -38,23 +38,5 @@ const countOnly = (sourcArr, expectObject) => {
     compVar = ele;
   };
   return result;
-}
-
-const firstNames = [
-  "Karl",
-  "Salima",
-  "Agouhanna",
-  "Fang",
-  "Kavith",
-  "Jason",
-  "Salima",
-  "Fang",
-  "Joe"
-];
-
-const result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true, "Agouhanna": false });
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 2);
-assertEqual(result1["Agouhanna"], undefined);
+};
+module.exports = countOnly;

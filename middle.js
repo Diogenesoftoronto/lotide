@@ -6,5 +6,4 @@ const middle = (arr) => {
     return [arr[Math.floor(arr.length / 2)]];
   }
 }
-
 module.exports = middle;

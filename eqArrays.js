@@ -1,6 +1,3 @@
-// import the assertEqual function from the assertEqual module.
-const assertEqual = require('./assertEqual');
-
 const eqArrays = (arr1, arr2) => {
   if (arr1 === undefined && arr2 === undefined) return false;
   // check if the array lengths are different

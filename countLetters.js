@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const countLetters = str => {
   
   // define the comparison variable
@@ -30,8 +28,4 @@ const countLetters = str => {
   return amountObject;
 }
 
-// tests
-const testresult = countLetters("lighthouse in the house")
-console.log(countLetters("head"),{h:1,e:1,a:1,d:1})
-console.log(countLetters("hea"),{h:1,e:1,a:1})
-console.log(countLetters("lighthouse in the house"))
+module.exports = countLetters;
